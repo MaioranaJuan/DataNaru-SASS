@@ -34,31 +34,30 @@
     color: #000000;
     justify-content: space-evenly;
     padding-bottom: 20px;
+    flex-wrap: wrap;
 
-    .cardEquipo7 {
-        height: 500px;
-        width: 300px;
-        background-color: $ColorPrin;
-        padding: 10px;
+    .card1 {
+        @include CardsTam(100%, 300px, 10px, $ColorPrin);
+    }
 
-        img {
-            width: 100%;
-            height: 100%;
-            transition: 0.5s;
-            filter: grayscale(1);
+    .card2 {
+        @include CardsTam(100%, 300px, 10px, $ColorPrin);
+    }
 
-            &:hover {
-                transform: scale(1.10, 1.10);
-                filter: grayscale(0);
-            }
-        }
+    .card3 {
+        @include CardsTam(500px, 300px, 10px, $ColorPrin);
+    }
+
+    .card4 {
+        @include CardsTam(500px, 300px, 10px, $ColorPrin);
+    }
+
+    img{
+        @extend %hover;
     }
 
     .img-card {
-        background-image: url(../assets/Puerta-Konoha.jpg);
-        background-size: cover;
-        height: 200px;
-        width: 100%;
+        @extend %konoha;
     }
 
 }

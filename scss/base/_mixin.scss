@@ -1,0 +1,6 @@
+@mixin CardsTam($alto, $ancho, $padding, $fondoCard){
+height: $alto;
+width: $ancho;
+padding: $padding;
+background-color: $fondoCard;
+}

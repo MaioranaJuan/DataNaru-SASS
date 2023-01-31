@@ -29,6 +29,31 @@ li {
 a {
   text-decoration: none; }
 
+.tarjetas img, .game img, .game2 img {
+  width: 100%;
+  height: 100%; }
+
+.tarjetas .img-card {
+  background-image: url(../assets/Puerta-Konoha.jpg);
+  background-size: cover;
+  height: 200px;
+  width: 100%; }
+
+.tarjetas img {
+  transition: 0.5s;
+  filter: grayscale(1); }
+  .tarjetas img:hover {
+    transform: scale(1.1, 1.1);
+    filter: grayscale(0); }
+
+.game, .game2 {
+  background-color: #191919;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 10px; }
+
 /* HEADER */
 header {
   background-color: #DC5F00;
@@ -106,6 +131,13 @@ header {
   color: #ffff;
   -webkit-text-stroke: 2px #000000; }
 
+.btn-descarga {
+  font-size: 30px;
+  font-family: txt;
+  width: 200px;
+  background-color: #3c3cdd;
+  border-radius: 8px; }
+
 /* INDEX */
 .main {
   background-image: url(../assets/fondo/livewallpaper_konoha__naruto__by_themanofsteel0_df3f98i-fullview.jpg);
@@ -135,25 +167,28 @@ header {
   display: flex;
   color: #000000;
   justify-content: space-evenly;
-  padding-bottom: 20px; }
-  .tarjetas .cardEquipo7 {
+  padding-bottom: 20px;
+  flex-wrap: wrap; }
+  .tarjetas .card1 {
+    height: 100%;
+    width: 300px;
+    padding: 10px;
+    background-color: #DC5F00; }
+  .tarjetas .card2 {
+    height: 100%;
+    width: 300px;
+    padding: 10px;
+    background-color: #DC5F00; }
+  .tarjetas .card3 {
     height: 500px;
     width: 300px;
-    background-color: #DC5F00;
-    padding: 10px; }
-    .tarjetas .cardEquipo7 img {
-      width: 100%;
-      height: 100%;
-      transition: 0.5s;
-      filter: grayscale(1); }
-      .tarjetas .cardEquipo7 img:hover {
-        transform: scale(1.1, 1.1);
-        filter: grayscale(0); }
-  .tarjetas .img-card {
-    background-image: url(../assets/Puerta-Konoha.jpg);
-    background-size: cover;
-    height: 200px;
-    width: 100%; }
+    padding: 10px;
+    background-color: #DC5F00; }
+  .tarjetas .card4 {
+    height: 500px;
+    width: 300px;
+    padding: 10px;
+    background-color: #DC5F00; }
 
 .titulo {
   width: 250px;
@@ -229,13 +264,10 @@ header {
   height: 100vh; }
 
 .game {
-  background-color: #191919;
-  padding: 30px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
-  grid-template-areas: 'f1 f6 f6' 'f2 f2 f3' 'f2 f2 f4' 'f5 f5 boton';
-  gap: 10px; }
+  grid-template-areas: 'f1 f6 f6' 'f2 f2 f3' 'f2 f2 f4' 'f5 f5 boton'; }
+
+.game2 {
+  grid-template-areas: 'f1 f6 f6' 'f1 f5 f5' 'f2 f3 f4' '.. boton boton'; }
 
 .f1 {
   grid-area: f1; }
@@ -256,20 +288,8 @@ header {
   grid-area: f6;
   color: #ffffff; }
 
-.fotos img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain; }
-
 .btnarea {
   grid-area: boton; }
-
-.btn-descarga {
-  font-size: 30px;
-  font-family: txt;
-  width: 200px;
-  background-color: #3c3cdd;
-  border-radius: 8px; }
 
 /* CONTACTO */
 .contacto-main {
