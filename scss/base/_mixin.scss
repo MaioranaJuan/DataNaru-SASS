@@ -1,6 +1,13 @@
-@mixin CardsTam($alto, $ancho, $padding, $fondoCard){
-height: $alto;
-width: $ancho;
-padding: $padding;
-background-color: $fondoCard;
+@mixin CardsTam($alto, $ancho, $padding, $fondoCard) {
+    height: $alto;
+    width: $ancho;
+    padding: $padding;
+    background-color: $fondoCard;
+}
+
+
+@mixin Secciones($bgimg, $bgpos, $bgsize) {
+    background-image: $bgimg;
+    background-position: $bgpos;
+    background-size: $bgsize;
 }

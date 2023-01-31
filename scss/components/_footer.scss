@@ -6,55 +6,57 @@
     font-family: $TextNyF;
     display: flex;
     justify-content: space-between;
-}
 
-/* redes */
-.redes {
-    background-color: #000000;
-    padding: 10px;
-    color: #ffff;
-    justify-content: space-evenly;
-}
+    /* redes */
+    .redes {
+        background-color: #000000;
+        padding: 10px;
+        color: #ffff;
+        justify-content: space-evenly;
 
-.redes1 {
-    display: grid;
-    grid-template-columns: repeat(3, 90px);
-    grid-template-rows: auto;
-    grid-template-areas:
-        'area1 .. area3'
-        '.. area5 ..';
-}
+        .redes1 {
+            display: grid;
+            grid-template-columns: repeat(3, 90px);
+            grid-template-rows: auto;
+            grid-template-areas:
+                'area1 .. area3'
+                '.. area2 ..';
 
-.ig {
-    color: #dc143c;
-    grid-area: area1;
-}
 
-.fb {
-    color: #0000ff;
-    grid-area: area3;
-}
+            .ig {
+                color: #dc143c;
+                grid-area: area1;
+            }
 
-.tw {
-    color: #7fffd4;
-    grid-area: area5;
-}
+            .fb {
+                color: #0000ff;
+                grid-area: area3;
+            }
 
-/* footer nav */
-.footnav {
-    background-color: #000000;
-    padding: 10px;
-    padding-right: 180px;
-}
+            .tw {
+                color: #7fffd4;
+                grid-area: area2;
+            }
+        }
+    }
 
-.color-foot {
-    color: #ffffff;
-}
+    /* footer nav */
+    .footnav {
+        background-color: #000000;
+        padding: 10px;
+        padding-right: 180px;
 
-/* footer logo */
+        .color-foot {
+            color: #ffffff;
+        }
+    }
 
-.logof a {
-    font-size: 50px;
-    color: #ffff;
-    -webkit-text-stroke: 2px #000000;
+    /* footer logo */
+
+    .logof a {
+        font-size: 50px;
+        color: #ffff;
+        -webkit-text-stroke: 2px #000000;
+    }
+
 }

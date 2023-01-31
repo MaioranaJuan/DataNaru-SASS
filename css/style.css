@@ -89,47 +89,39 @@ header {
   object-fit: cover;
   font-family: nyf;
   display: flex;
-  justify-content: space-between; }
-
-/* redes */
-.redes {
-  background-color: #000000;
-  padding: 10px;
-  color: #ffff;
-  justify-content: space-evenly; }
-
-.redes1 {
-  display: grid;
-  grid-template-columns: repeat(3, 90px);
-  grid-template-rows: auto;
-  grid-template-areas: 'area1 .. area3' '.. area5 ..'; }
-
-.ig {
-  color: #dc143c;
-  grid-area: area1; }
-
-.fb {
-  color: #0000ff;
-  grid-area: area3; }
-
-.tw {
-  color: #7fffd4;
-  grid-area: area5; }
-
-/* footer nav */
-.footnav {
-  background-color: #000000;
-  padding: 10px;
-  padding-right: 180px; }
-
-.color-foot {
-  color: #ffffff; }
-
-/* footer logo */
-.logof a {
-  font-size: 50px;
-  color: #ffff;
-  -webkit-text-stroke: 2px #000000; }
+  justify-content: space-between;
+  /* redes */
+  /* footer nav */
+  /* footer logo */ }
+  .footer .redes {
+    background-color: #000000;
+    padding: 10px;
+    color: #ffff;
+    justify-content: space-evenly; }
+    .footer .redes .redes1 {
+      display: grid;
+      grid-template-columns: repeat(3, 90px);
+      grid-template-rows: auto;
+      grid-template-areas: 'area1 .. area3' '.. area2 ..'; }
+      .footer .redes .redes1 .ig {
+        color: #dc143c;
+        grid-area: area1; }
+      .footer .redes .redes1 .fb {
+        color: #0000ff;
+        grid-area: area3; }
+      .footer .redes .redes1 .tw {
+        color: #7fffd4;
+        grid-area: area2; }
+  .footer .footnav {
+    background-color: #000000;
+    padding: 10px;
+    padding-right: 180px; }
+    .footer .footnav .color-foot {
+      color: #ffffff; }
+  .footer .logof a {
+    font-size: 50px;
+    color: #ffff;
+    -webkit-text-stroke: 2px #000000; }
 
 .btn-descarga {
   font-size: 30px;
@@ -199,6 +191,10 @@ header {
   margin: 20px;
   padding: 10px; }
 
+.subtitulos {
+  font-family: subtitulo;
+  font-size: 30px; }
+
 /* secciones */
 .secciones {
   display: grid;
@@ -219,30 +215,22 @@ header {
       font-size: 50px;
       color: #ffff;
       -webkit-text-stroke: 2px #000000; }
+  .secciones .aldeas {
+    background-image: url(../assets/Aldeas.png);
+    background-position: center;
+    background-size: cover; }
+  .secciones .tecnicasElementales {
+    background-image: url(../assets/Tecnicaselementales.jpg);
+    background-position: center;
+    background-size: cover; }
+  .secciones .personajes {
+    background-image: url(../assets/personajes.jpg);
+    background-position: center;
+    background-size: cover; }
 
 .section {
   width: 100%;
   height: 500px; }
-
-.personajes {
-  background-image: url(../assets/personajes.jpg);
-  background-position: center;
-  background-size: cover; }
-
-.aldeas {
-  background-image: url(../assets/Aldeas.png);
-  background-position: center;
-  background-size: cover; }
-
-.tecnicasElementales {
-  background-image: url(../assets/Tecnicaselementales.jpg);
-  background-position: center;
-  background-size: cover; }
-
-/* tipografia subtitulos */
-.subtitulos {
-  font-family: subtitulo;
-  font-size: 30px; }
 
 /* DESCARGAS */
 .descargas-main {
