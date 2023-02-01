@@ -28,19 +28,28 @@
         width: 100%;
         height: 530px;
 
-        .casilla {
-            font-family: $TextCards;
-            display: flex;
-            flex-direction: column;
-            font-size: 20px;
+        .casilla1 {
+            @extend %casilla;
+            flex-direction: row;
+        }
 
-            input, textarea{
-                padding: 10px;
-                resize: none;
-            }
+        .casilla2 {
+            @extend %casilla;
+        }
+
+        .casilla3 {
+            @extend %casilla;
+        }
+
+        .buttonSend {
+            display: flex;
+            justify-content: end;
+            padding-top: 10px;
         }
     }
 }
+
+
 
 .btnContacto {
     font-size: 20px;
