@@ -152,7 +152,7 @@ header {
     color: #ffffff;
     font-family: txt;
     font-size: 20px;
-    padding: 30px; }
+    padding: 20px; }
 
 /* tarjetas */
 .tarjetas {
@@ -307,7 +307,8 @@ header {
       display: flex;
       flex-direction: column;
       font-size: 20px; }
-      .formulario .form .casilla textarea {
+      .formulario .form .casilla input, .formulario .form .casilla textarea {
+        padding: 10px;
         resize: none; }
 
 .btnContacto {
